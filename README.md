@@ -17,10 +17,13 @@ python: 3.9.5
 #### 一、克隆此项目到本地
 
 1.可以点击**下载**按钮下载 zip 包
-<img src="./%E6%95%99%E7%A8%8B%E5%9B%BE%E7%89%87/%E4%B8%8B%E8%BD%BDzip%E5%8C%85.png" alt="下载ZIP包" width="60%">
+
+<img src="./%E6%95%99%E7%A8%8B%E5%9B%BE%E7%89%87/%E4%B8%8B%E8%BD%BDzip%E5%8C%85.png" alt="下载ZIP包" width="40%">
+
 
 2.也可以复制此代码到 cmd 运行 ↓
 `git clone https://github.com/Lkhsss/163music-autocheckin.git`
+
 <img src="./%E6%95%99%E7%A8%8B%E5%9B%BE%E7%89%87/%E5%85%8B%E9%9A%86%E9%A1%B9%E7%9B%AE.png" alt="克隆本项目" width="80%">
 
 ---
@@ -28,7 +31,9 @@ python: 3.9.5
 #### 二、配置配置文件
 
 在`config.ini`文件中配置自己的设置
+
 `username`为你的网易云账号电话号码
+
 `logintype`为登录方式（`pc`、`scanqr`可选，一个是验证码登录，一个是扫描二维码登录）
 
 ---
@@ -53,14 +58,19 @@ python: 3.9.5
 #### 五、运行
 
 在仓库首页点击`Acions`
+
 <img src="./教程图片/点击actions.png" alt="点击actions" width="90%">
 
 再点击 **I understand my workflows, go ahead and enable them**
-![](https://i.loli.net/2020/07/27/pyQmdMHrOIz4x2f.png)
+
+![点击确认](https://i.loli.net/2020/07/27/pyQmdMHrOIz4x2f.png)
+
 点击“网易云自动签到”即可查看详情
+
 <img src="./教程图片/点击查看工作流运行详情.png" alt="点击查看工作流运行详情" width="90%">
 
 如图，左边显示绿勾时，就表示工作流工作正常
+
 <img src="./教程图片/成功运行.png" alt="点击查看工作流运行详情" width="90%">
 
 ---
