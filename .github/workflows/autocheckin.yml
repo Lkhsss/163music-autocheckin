@@ -1,0 +1,32 @@
+name: 网易云自动签到
+
+on:
+  push:
+    branches: [master]
+  pull_request:
+    branches: [master]
+  schedule:
+    - cron: 0 22,6 * * *
+  watch:
+    types: started
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    if: github.event.repository.owner.id == github.event.sender.id
+
+    steps:
+      - uses: actions/checkout@v2
+      - name: 初始化Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: 3.9
+      - name: 安装依赖
+        run: |
+          pip install -r requirements.txt
+      - name: 复制cookie信息
+        run: |
+          cp music163.pkl /opt/hostedtoolcache/Python/3.9.14/x64/lib/python3.9/site-packages/DecryptLogin/modules/clients/music163.pkl
+      - name: 开始尝试签到
+        run: |
+          python3 main.py
