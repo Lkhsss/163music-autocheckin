@@ -23,7 +23,7 @@ jobs:
       - name: 安装依赖
         run: |
           pip install -r requirements.txt
-      - name: 复制cookie信息
+      - name: 检查环境
         run: |
           python3 check.py
       - name: 开始尝试签到

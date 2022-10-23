@@ -1,4 +1,4 @@
-from genericpath import isfile
+from shutil import copyfile
 import os
 
 
@@ -8,19 +8,22 @@ class check:
         cookie_path = str(path) + "/modules/clients/music163.pkl"
         try:
             if os.path.isfile("music163.pkl"):
-                command = "cp music163.pkl " + str(cookie_path)
-                os.system(command)
+                copyfile("music163.pkl", cookie_path)
                 print("cookie信息复制成功")
             else:
-                print("没有cookie信息，将自动使用扫码登录")
+                if os.path.isfile(cookie_path):
+                    copyfile(cookie_path, "music163.pkl")
+                    print("cookie信息复制成功")
+                else:
+                    print("没有cookie信息，将自动使用扫码登录")
         except:
             print("复制cookie信息出错")
 
         try:
             lib_path = str(path) + "/modules/core/music163.py"
             if os.path.isfile("music163.py"):
-                command = "cp music163.py " + str(lib_path)
-                os.system(command)
+                copyfile("music163.py", lib_path)
+                print("复制组件库")
             else:
                 print("不存在必要组件")
                 raise RuntimeError("没有找到必要组件music163.py")
