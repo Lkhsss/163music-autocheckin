@@ -15,9 +15,9 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
       - name: 初始化Python
-        uses: actions/setup-python@v2
+        uses: actions/setup-python@v3
         with:
           python-version: 3.9
       - name: 安装依赖
@@ -25,7 +25,7 @@ jobs:
           pip install -r requirements.txt
       - name: 复制cookie信息
         run: |
-          cp music163.pkl /opt/hostedtoolcache/Python/3.9.14/x64/lib/python3.9/site-packages/DecryptLogin/modules/clients/music163.pkl
+          python3 check.py
       - name: 开始尝试签到
         run: |
           python3 main.py
