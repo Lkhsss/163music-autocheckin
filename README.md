@@ -1,5 +1,6 @@
 ## 一个简单的，基于 Github Action 的网易云自动签到脚本
-目前项目运行状态：[![autowork](https://github.com/Lkhsss/163music-autocheckin-private-/actions/workflows/autocheckin.yml/badge.svg?branch=main&event=schedule)](https://github.com/Lkhsss/163music-autocheckin-private-/actions/workflows/autocheckin.yml)
+
+目前项目运行状态(私有库)：[![自动签到](https://github.com/Lkhsss/163music-autocheckin-private-/actions/workflows/autocheckin.yml/badge.svg?branch=main&event=schedule)](https://github.com/Lkhsss/163music-autocheckin-private-/actions/workflows/autocheckin.yml)
 
 > 为了需要把[Charles 的皮卡丘](https://mp.weixin.qq.com/s/8d7smUSzW2ds1ypZq-yeFw)的代码改了一下，做了个可以用 github action 的网易云签到脚本。配置好后可以一直不用管。不用自备服务器，没有其他花里胡哨功能。
 
