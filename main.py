@@ -95,7 +95,7 @@ class NeteaseSignin:
             "https://music.163.com/weapi/point/dailyTask?csrf_token=" + self.csrf
         )
         # 模拟签到(typeid为0代表APP上签到, 为1代表在网页上签到)
-        typeids = [1]
+        typeids = [0, 1]
         for typeid in typeids:
             client_name = "Web端" if typeid == 1 else "APP端"
             # --构造请求获得响应
