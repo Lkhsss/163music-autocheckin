@@ -1,3 +1,7 @@
+# 网易云更新API，此项目目前作废，正在寻找新方法
+
+
+
 ## 一个简单的，基于 Github Action 的网易云自动签到脚本
 
 目前项目运行状态(私有库)：[![自动签到](https://github.com/Lkhsss/163music-autocheckin-private-/actions/workflows/autocheckin.yml/badge.svg?branch=main&event=schedule)](https://github.com/Lkhsss/163music-autocheckin-private-/actions/workflows/autocheckin.yml)
